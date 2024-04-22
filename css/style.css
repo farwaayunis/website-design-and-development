@@ -155,7 +155,7 @@ position:absolute;
 bottom:-.5rem;
 left: 0;
 height: 11rem;
-background: url('/images/wave.svg');
+background: url('../images/wave.svg');
 background-size: 49.5rem 11rem;
 background-repeat:repeat-x ;
 width:100%;
