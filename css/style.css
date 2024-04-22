@@ -17,6 +17,29 @@ body{overflow-x:hidden;
 }
 
 
+
+.heading{
+    margin:2rem;padding-top:6rem;
+    display:inline-block;
+    font-size:3.5rem;
+    color:var(--color);
+    position:relative;
+letter-spacing: .2rem;
+}
+
+.heading::before,.heading::after{
+    content: '';
+    position:absolute;
+    height: 2.5rem;
+    width:2.5rem;
+    border-top: .4rem solid var(--color);
+    border-left: .4rem solid var(--color);
+}
+
+.heading::before{top:5.8rem;left:-2rem;}
+.heading::after{bottom:-.5em;right:-2rem;
+transform:rotate(180deg);}
+
 .header{display:flex;
 align-items:center;
 justify-content: space-between;
@@ -196,4 +219,13 @@ top:10%;
 }
 @keyframes rotate{
     100%{transform: rotate(360deg);}
+}
+
+/* about section starts here */
+.about{
+    width:100vw;
+    min-height: 100vh;
+    position:relative;
+    text-align:center;
+    overflow-x: hidden;
 }
