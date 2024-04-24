@@ -123,6 +123,20 @@ justify-content: space-around;
     font-size:1.5rem;
     
 }
+
+.about-us .row{ flex-flow: column-reverse;
+    padding: 0 4rem;}
+    
+    .about-us .row .image{
+        width:100vw;
+    }
+    
+    /* Responsive behaviour in about us  */
+    
+    .about-us .row .content { width:fit-content;}
+    
+    
+
 }
 
 /* home styles start here  */
@@ -222,10 +236,44 @@ top:10%;
 }
 
 /* about section starts here */
-.about{
+.about-us{
     width:100vw;
     min-height: 100vh;
     position:relative;
     text-align:center;
     overflow-x: hidden;
+   
+   
+}
+.about-us .row{
+   display:flex;
+   align-items:center;
+   justify-content:space-around;
+   padding:0 4rem;
+  
+}
+.about-us .content,.image{width:50vw;}
+.about-us .content{text-align: left;}
+.about-us .content h2{color: var(--color);
+font-size: 3rem;}
+.about-us .content p{color:#333;
+font-size: 2rem;}
+.about-us .content .button{
+    height: 4.5rem;
+    width:13.5rem;
+    background-color: var(--color);
+    color: white;
+    border-radius: 10rem;
+    padding:1rem;   
+    border:none;
+    cursor: pointer;
+outline:none;
+margin-top:1rem;
+font-size:1.5rem;
+font-weight:300;
+
+}
+.about-us  .button:hover{
+letter-spacing: 0.1rem;
+transition: 0.2s ease;
 }
