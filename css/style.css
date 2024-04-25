@@ -78,66 +78,7 @@ justify-content: space-around;
     width:100vw;
     background:linear-gradient(purple,var(--color))
 }
-/* media queries */
-@media(max-width:768px){
 
-    html{font-size: 50%;}
-
-    .header .fa-bars{ display:block;}
-
-  .header .navbar{
-    position:fixed;
-    top:-120%;left:0;
-    height:auto;
-    width:100%;
-    background-color:#fff;
-    z-index:100;
-    border-top:0.1rem solid rgba(0,0,0 0.3);
-  }
-  .header .navbar ul{
-    height:100%;width:100%;
-    flex-flow:column;
-  }
-  .header .navbar ul li{
-    margin:1rem 0;
-  }
-  .header .navbar ul li a{
-    color:#444;
-    font-size:2.4rem;
-
-  }
-  .header .fa-times{
-    transform: rotate(180deg);
-  }
-
-  .header .nav-toggle{top:5.8rem;}
-
-  .home .banner {
- 
-    font-size:3rem;
-
-  }
-
-.home .slogan {
-   
-    font-size:1.5rem;
-    
-}
-
-.about-us .row{ flex-flow: column-reverse;
-    padding: 0 4rem;}
-    
-    .about-us .row .image{
-        width:100vw;
-    }
-    
-    /* Responsive behaviour in about us  */
-    
-    .about-us .row .content { width:fit-content;}
-    
-    
-
-}
 
 /* home styles start here  */
 .home{
@@ -257,7 +198,7 @@ top:10%;
 .about-us .content h2{color: var(--color);
 font-size: 3rem;}
 .about-us .content p{color:#333;
-font-size: 2rem;}
+font-size: 1.5rem;}
 .about-us .content .button{
     height: 4.5rem;
     width:13.5rem;
@@ -276,4 +217,220 @@ font-weight:300;
 .about-us  .button:hover{
 letter-spacing: 0.1rem;
 transition: 0.2s ease;
+}
+
+/* services section starts here  */
+.service{
+    width:100vw;
+   text-align: center;
+  
+}
+
+.service .row{
+
+
+padding:0 2rem;
+margin: 2rem 0;
+display: flex;
+align-items:center;
+justify-content: center;
+}
+.service .image img{
+    width: 50vw;
+    height:55vh;
+}
+.service .row .content{
+   
+  padding-top: 15rem;
+  margin: 0 4rem;
+    text-align: left;
+    width: 50vw;
+}
+
+.service .row .content h2{
+    font-size: 3rem;
+    font-weight: 600;    
+    color: var(--color);
+}
+.service .row .content p{
+    color:#333;
+    font-size:1.2rem;
+}
+.service .button{
+    height: 4.5rem;
+    width:13.5rem;
+    background-color: var(--color);
+    color: white;
+    border-radius: 10rem;
+    padding:1rem;   
+    border:none;
+    cursor: pointer;
+outline:none;
+margin-top:1rem;
+font-size:1.5rem;
+font-weight:300;
+}
+.service .button:hover{
+    letter-spacing: 0.1rem;
+    transition: 0.2s ease;
+    background-color: #8f82f0;
+    font-weight: 350;
+}
+
+
+/* services section ends here  */
+
+
+
+/* teams section starts here  */
+.team{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #333;
+    text-align: center;
+}
+
+.team .heading{
+    color: whitesmoke;
+}
+
+.team .heading::before,.team .heading::after{border-color: whitesmoke;}
+
+.team .row{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+
+.team .row .card{
+
+    height:35rem;
+    width:25rem;
+    background-color: whitesmoke;
+    text-align:center;
+    margin:7rem 2rem;   
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    -webkit-box-reflect: below .2rem  linear-gradient(transparent 70%,#0004);
+}
+
+.team .row .card .image{
+    padding-top:3rem;
+    margin:-1rem -20rem;
+    
+}
+.team .row .card .image  img{
+   height:15rem;
+   width:15rem;
+   border-radius: 50%;
+   
+   border: 5px solid whitesmoke;
+   box-shadow:0 0 .5rem  rgba(0,0,0 0.3); 
+    
+    object-fit: cover;
+}
+.team .row .card .info{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.team .row .card .info .icons{
+        margin-top: 2rem;
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly;
+}
+.team .row .card .info .icons a{
+    font-size: 3rem;
+    font-weight: 200;
+    color: black;
+}
+
+.team .row .card .info .icons a:hover{
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--color);
+    transition: 0.2s ease;
+}
+
+/* teams section ends here  */
+
+
+
+
+
+
+/* Responsive behaviour of website starts here  */
+
+/* media queries */
+@media only screen and (max-width:768px){
+
+    html{font-size: 50%;}
+
+    .header .fa-bars{ display:block;}
+
+  .header .navbar{
+    position:fixed;
+    top:-120%;left:0;
+    height:auto;
+    width:100%;
+    background-color:#fff;
+    z-index:100;
+    border-top:0.1rem solid rgba(0,0,0 0.3);
+  }
+  .header .navbar ul{
+    height:100%;width:100%;
+    flex-flow:column;
+  }
+  .header .navbar ul li{
+    margin:1rem 0;
+  }
+  .header .navbar ul li a{
+    color:#444;
+    font-size:2.4rem;
+
+  }
+  .header .fa-times{
+    transform: rotate(180deg);
+  }
+
+  .header .nav-toggle{top:5.8rem;}
+
+  .home .banner {
+ 
+    font-size:3rem;
+
+  }
+
+.home .slogan {
+   
+    font-size:1.5rem;
+    
+}
+/* Responsive Behaviour in about us  */
+.about-us .row{ flex-flow: column-reverse;
+    padding: 0 4rem;}
+    
+    .about-us .row .image{
+        width:100vw;
+    }
+
+    .about-us .row .content { width:fit-content;}
+    
+    /* Responsive behaviour in Services  */
+    
+    
+    
+    .services .row{display:-ms-flexbox;
+    flex-direction: row;}
+
+    .services .row :nth-child(even){flex-flow: column;}
+
+    .services .row .image img {
+       width:100vw;
+    }
+.service .row .content{padding: 0;}
 }
