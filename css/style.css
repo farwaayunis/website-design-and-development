@@ -312,6 +312,7 @@ flex-wrap: wrap;
     width:25rem;
     background-color: whitesmoke;
     text-align:center;
+    position: relative;
     margin:7rem 2rem;   
     overflow: hidden;
     display:flex;
@@ -363,6 +364,22 @@ flex-wrap: wrap;
     font-weight: 300;
     color: var(--color);
     transition: 0.2s ease;
+}
+.team .row .card:before,.team .row .card:after{
+    content:'';
+    position:absolute;
+    height:15rem;
+    width:15rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+.team .row .card:before{
+    background-color: #9f93f5;
+ margin-top: -3rem;margin-left: 12rem;
+}
+.team .row .card:after{
+    background-color: #d3d3d3;
+ margin-top:25em;margin-left: -10px;
 }
 
 /* teams section ends here  */
@@ -442,10 +459,11 @@ margin-bottom: -10vh;}
 
 .service .image img,
 .service .content h2,
-.service .content p{width: fit-content;}
-
+.service .content p{width: fit-content;margin:0 0 0 -6rem;align-items: left;}
+.service .content p{font-size: 5rem;}
 .service .row:last-child{margin-bottom: 10vh;}
 
-   
+   /* teams section starts here  */
+   .team .card .image img{margin-left: 40vw;}
     }
 
