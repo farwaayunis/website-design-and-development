@@ -233,7 +233,8 @@ padding:0 2rem;
 margin: 2rem 0;
 display: flex;
 align-items:center;
-justify-content: center;
+justify-content: space-around;
+
 }
 .service .image img{
     width: 50vw;
@@ -299,13 +300,14 @@ font-weight:300;
 .team .row{
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-evenly;
 flex-wrap: wrap;
+
 
 }
 
 .team .row .card{
-
+    
     height:35rem;
     width:25rem;
     background-color: whitesmoke;
@@ -313,7 +315,7 @@ flex-wrap: wrap;
     margin:7rem 2rem;   
     overflow: hidden;
     display:flex;
-    flex-direction: column;
+    flex-direction: column;    
     -webkit-box-reflect: below .2rem  linear-gradient(transparent 70%,#0004);
 }
 
@@ -332,10 +334,17 @@ flex-wrap: wrap;
     
     object-fit: cover;
 }
-.team .row .card .info{
-    margin-top: 2rem;
+
+.team .row .card .info h3{
+    font-weight: 800;
+    color: #333;
     font-size: 2rem;
-    font-weight: 400;
+}
+
+.team .row .card .info span{
+    font-size: 2rem;
+    color:var(--color);
+    
 }
 .team .row .card .info .icons{
         margin-top: 2rem;
@@ -421,16 +430,22 @@ flex-wrap: wrap;
     .about-us .row .content { width:fit-content;}
     
     /* Responsive behaviour in Services  */
-    
-    
-    
-    .services .row{display:-ms-flexbox;
-    flex-direction: row;}
+.service {width: 100%;
+padding:0 0.5rem;}
 
-    .services .row :nth-child(even){flex-flow: column;}
+.service .row{margin: 0 1rem;flex-wrap: wrap;}
 
-    .services .row .image img {
-       width:100vw;
+.service .image{order: -1; margin-top:8vh;
+margin-bottom: -10vh;}
+.service .content,
+.service .image{flex:1 1 100%;}
+
+.service .image img,
+.service .content h2,
+.service .content p{width: fit-content;}
+
+.service .row:last-child{margin-bottom: 10vh;}
+
+   
     }
-.service .row .content{padding: 0;}
-}
+
