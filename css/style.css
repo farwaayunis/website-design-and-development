@@ -522,7 +522,13 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     font-size: 11px;
     color: #333;
 }
+ /* footer starts here  */
+ footer{
 
+    background-color:var(--color);
+    text-align: center;
+    color: azure;
+ }
 
 
 
