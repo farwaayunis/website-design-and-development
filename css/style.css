@@ -328,11 +328,9 @@ flex-wrap: wrap;
 .team .row .card .image  img{
    height:15rem;
    width:15rem;
-   border-radius: 50%;
-   
+   border-radius: 50%;   
    border: 5px solid whitesmoke;
-   box-shadow:0 0 .5rem  rgba(0,0,0 0.3); 
-    
+   box-shadow:0 0 .5rem  rgba(0,0,0 0.3);     
     object-fit: cover;
 }
 
@@ -384,9 +382,101 @@ flex-wrap: wrap;
 
 /* teams section ends here  */
 
+/* contact us section starts here  */
+
+.contact{
+    width:100vw;
+    height:100vh;
+text-align: center;}
+
+ .contact .row{
+    padding:0 2rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+ }
+ .contact .image ,.contact .form-container{
+    flex:1 1 50%;
+    text-align: left;
+ }
+ .contact .image img{
+    width:60%;
+    height: 70%;
+    }
+
+    .contact .form-container form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact form {
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(145, 145, 145, 0.5); /* Shadow effect */
+        width: 90%;
+      }
+    .contact  formgroup {
+        margin-bottom: 15px;
+      }
+    .contact form  input[type="text"],
+    .contact form  input[type="email"],
+     .contact form textarea {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #a19f9f;
+        border-radius: 5px;
+        transition: 0.5s ease;
+      }
+
+      
+     .contact form input[type="submit"] {
+        background-color: var(--color) ;
+        color: white;
+        padding: 10px 20px;
+        width: 20rem;
+        border: none;
+        border-radius:30rem;
+        cursor: pointer;
+        float: right;
+      }
+     .contact form input[type="submit"]:hover {
+        background-color: #8377e4;
+        letter-spacing: 0.5rem;
+        transition: 0.5s ease;
+      }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+/* contact us section ends here  */
 
 
 /* Responsive behaviour of website starts here  */
@@ -465,5 +555,19 @@ margin-bottom: -10vh;}
 
    /* teams section starts here  */
    .team .card .image img{margin-left: 40vw;}
-    }
 
+
+   /* contact section starts here  */
+   
+.contact .row{
+    flex-direction: column;
+    flex-wrap: wrap;}
+
+   
+    .contact .row .image img{width: 100vw;
+    }
+    .contact .row .form-container{width: 100vw;}
+
+  
+
+}
